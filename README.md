@@ -20,7 +20,7 @@ Current version includes the following:
 
 **Power-save mode:** controls brightness to lower power consumption.
 
-**Network manager:** checks wifi and pings to the internet to restore connection when it's lost.
+**Connection manager:** checks wifi and pings to the internet to restore connection when it's lost.
 
 **PAL voice samples:** cloned voice of PAL from "The Mitchells vs. The Machines" using the AI voice model CoquiAI-TTS v2.
 
