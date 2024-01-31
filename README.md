@@ -37,7 +37,7 @@ Current version includes the following:
 
 3. Upload the files and folders to the UNIHIKER in **/root/upload/PAL/**
 
-4. **Configure** WIFI credentials, IoT devices, theme, etc.
+4. **Configure** in the script the WIFI credentials, IoT devices, theme, etc.
 
 5. Run the python script **PAL_010.py** from the Mind+ terminal or from the UNIHIKER touch interface.
 
