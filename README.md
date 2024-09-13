@@ -31,15 +31,17 @@ Current version includes the following:
 ## Installation
 
 1. Install dependencies for voice recognition:
-**pip install SpeechRecognition**
+**pip install SpeechRecognition pyyaml**
 
 2. **Download** this repo.
 
 3. Upload the files and folders to the UNIHIKER in **/root/upload/PAL/**
 
-4. **Configure** in the script the WIFI credentials, IoT devices, theme, etc.
+![PAL_Mind+](https://github.com/user-attachments/assets/646dcab9-4072-4f74-a407-9e3629b8a2e1)
 
-5. Run the python script **PAL_010.py** from the Mind+ terminal or from the UNIHIKER touch interface.
+5. **Configure** the **PAL_config.yaml** WIFI credentials, IoT devices, etc.
+
+6. Run the python script **python /root/upload/PAL/PAL_v020.py** from the Mind+ terminal or from the UNIHIKER touch interface.
 
 If you enable **Auto boot** from the Service Toggle menu , the script will run every time the UNIHIKER is restarted. 
 
