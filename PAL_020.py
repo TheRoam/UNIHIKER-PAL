@@ -77,9 +77,9 @@ os.system("brightness 100")
 #Black background
 gui.fill_rect(x=0,y=0,w=240,h=320,color=blue)
 #Display loading text (doubled-up to show as bold text)
-gui.draw_text(x = 200,y=180,text="PAL v0.1", font_size=32, color="white", angle=270, origin="center")
-gui.draw_text(x = 199,y=181,text="PAL v0.1", font_size=32, color="white", angle=270, origin="center")
-gui.draw_text(x = 201,y=179,text="PAL v0.1", font_size=32, color="white", angle=270, origin="center")
+gui.draw_text(x = 200,y=180,text="PAL v0.2", font_size=32, color="white", angle=270, origin="center")
+gui.draw_text(x = 199,y=181,text="PAL v0.2", font_size=32, color="white", angle=270, origin="center")
+gui.draw_text(x = 201,y=179,text="PAL v0.2", font_size=32, color="white", angle=270, origin="center")
 ld=ld+1
 gui.fill_rect(x=150,y=80,w=25,h=200,color=blue)
 gui.draw_text(x = 165,y=180,text="LOADING... ("+str(ld)+"/7", font_size=14, color="white", angle=270, origin="center")
