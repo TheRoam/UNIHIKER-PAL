@@ -561,7 +561,7 @@ def clm_program():
         #max temp
     gui.draw_text(x=150,y=265,text=climate["city"]["forecast"]["forecastDay"][day]["maxTemp"], font_size=8, color=red, angle=270, origin="top_left")
     #Close button placed on right
-    cls_btn=gui.draw_image(x=135, y=230, w=75, h=75, image="/root/upload/PAL/alpha-btn_S.png", onclick=cls_temp)
+    cls_btn=gui.draw_image(x=135, y=230, w=75, h=75, image="/root/upload/PAL/eyes/alpha-btn_S.png", onclick=cls_temp)
 
 def wmo_audio(i):
     if i==2 or i==9 :
@@ -636,7 +636,7 @@ def temp_thread():
             gui.draw_text(x=85,y=183,text=temp, font_size=12, color="black", angle=270, origin="center")
             gui.draw_text(x=86,y=184,text=temp, font_size=12, color="black", angle=270, origin="center")
             #brightness transparent button
-        gui.draw_image(x=70, y=150, w=180, h=80, image="/root/upload/PAL/alpha-btn_L.png", onclick=rst_bright)
+        gui.draw_image(x=70, y=150, w=180, h=80, image="/root/upload/PAL/eyes/alpha-btn_L.png", onclick=rst_bright)
         time.sleep(5)
 
 def temp_array(t):
@@ -664,9 +664,9 @@ def menu_btns():
     #Show mouth
     gui.fill_rect(x=0,y=50,w=65,h=260,color="white")
     #Draw transparent buttons
-    menu_left=gui.draw_image(x=135, y=75, w=75, h=75, image="/root/upload/PAL/alpha-btn_S.png", onclick=temp_program)
-    menu_cntr=gui.draw_image(x=70, y=150, w=180, h=80, image="/root/upload/PAL/alpha-btn_L.png", onclick=rst_bright)
-    menu_right=gui.draw_image(x=135, y=230, w=75, h=75, image="/root/upload/PAL/alpha-btn_S.png", onclick=lambda: print("click en cuadrado DER"))
+    menu_left=gui.draw_image(x=135, y=75, w=75, h=75, image="/root/upload/PAL/eyes/alpha-btn_S.png", onclick=temp_program)
+    menu_cntr=gui.draw_image(x=70, y=150, w=180, h=80, image="/root/upload/PAL/eyes/alpha-btn_L.png", onclick=rst_bright)
+    menu_right=gui.draw_image(x=135, y=230, w=75, h=75, image="/root/upload/PAL/eyes/alpha-btn_S.png", onclick=lambda: print("click en cuadrado DER"))
 
 def main_menu():
     #Restart brightness thread
@@ -680,7 +680,7 @@ def main_menu():
     gui.fill_rect(x=220,y=91,w=19,h=188,color="green")
 
     #Close menu
-    cls_btn=gui.draw_image(x=135, y=230, w=75, h=75, image="/root/upload/PAL/alpha-btn_S.png", onclick=menu_btns)
+    cls_btn=gui.draw_image(x=135, y=230, w=75, h=75, image="/root/upload/PAL/eyes/alpha-btn_S.png", onclick=menu_btns)
 
 menu_btns()
 
