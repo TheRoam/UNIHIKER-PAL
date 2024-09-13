@@ -1,32 +1,40 @@
+#READ COFIG FILE
+print("--READING USER CONFIG")
+import yaml
+with open('/root/upload/PAL/PAL_config.yaml', 'r') as file:
+    config=yaml.safe_load(file)
+
 #CONFIGURATION VARIABLES
+#--City ID for WMO weather forecast. Check IDs at:
+#---https://worldweather.wmo.int/en/json/full_city_list.txt
+CityID=config["PAL"]["wmo_city_id"]
+#--Smart light brand: only Shelly25 allowed (Sonoff and Shelly1 TBC)
+#---(otherwise, edit turnOn and turnOff functions according to local HTTP API)
+lampBrand=config["DEVICES"]["light1"]["brand"]
+lampChannel=config["DEVICES"]["light1"]["channel"]
+#--Smart light local IP
+#---add user and password if protected: "user:password@192.168.1.X"
+lampIP=config["DEVICES"]["light1"]["ip"]
+#--WIFI SSID and Password
+#---Used to restore connection if lost (this has happened to occur several times
+#---during testing, stopping the assistant service
+wifiSSID=config["CREDENTIALS"]["ssid"]
+wifiPWD=config["CREDENTIALS"]["pwd"]
+#--Power save mode
+#--- 1 -> Active: reduces brightness after 30 seconds
+#--- 0 -> Inactive: brightness keeps constant
+ps_mode=config["PAL"]["power_save_mode"]
+#--Room temperature
+#--- 1 -> Enabled: BMP-280 sensor is installed and will show room temperature.
+#--- 0 -> Disabled: BMP-280 sensor is NOT installed and won't show room temperature.
+room_temp==config["PAL"]["temperature_sensor"]
+
 #--Eye theme:
 #---chose from the files in the "eyes" folder: happy, angry, sad, surprised.
 #---Voice recognition will trigger an animation that will change from default eyesA to eyesB
 eyesA="surprised"
 eyesB="happy"
-#--City ID for WMO weather forecast. Check IDs at:
-#---https://worldweather.wmo.int/en/json/full_city_list.txt
-CityID="195"
-#--Smart light brand: only Shelly25 allowed (Sonoff and Shelly1 TBC)
-#---(otherwise, edit turnOn and turnOff functions according to local HTTP API)
-lampBrand="Shelly25"
-lampChannel="0"
-#--Smart light local IP
-#---add user and password if protected: "user:password@192.168.1.X"
-lampIP="192.168.1.44"
-#--WIFI SSID and Password
-#---Used to restore connection if lost (this has happened to occur several times
-#---during testing, stopping the assistant service
-wifiSSID="WIFI_SSID"
-wifiPWD="WIFI_PASSWORD"
-#--Power save mode
-#--- 1 -> Active: reduces brightness after 30 seconds
-#--- 0 -> Inactive: brightness keeps constant
-ps_mode=0
-#--Room temperature
-#--- 1 -> Enabled: BMP-280 sensor is installed and will show room temperature.
-#--- 0 -> Disabled: BMP-280 sensor is NOT installed and won't show room temperature.
-room_temp=0
+
 #--Activation keywords
 #---Recognized strings that will activate command recognition
 activate=[
