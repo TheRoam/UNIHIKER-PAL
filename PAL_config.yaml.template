@@ -1,0 +1,24 @@
+CREDENTIALS:
+    ssid: "WIFI_SSID"
+    pwd: "WIFI_PASSWORD"
+
+DEVICES:
+    light1:
+        brand: "Shelly25"
+        ip: "192.168.1.44"
+        channel: 0
+
+    light2:
+        brand: "Shelly25"
+        ip: "192.168.1.44"
+        channel: 1
+
+    light3:
+        brand: "Shelly1"
+        ip: "192.168.1.42"
+        channel: 0
+
+PAL:
+    power_save_mode: 0
+    temperature_sensor: 0
+    wmo_city_id: "195"
