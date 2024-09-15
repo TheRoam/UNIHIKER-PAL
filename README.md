@@ -39,7 +39,7 @@ Current version includes the following:
 
 ![PAL_Mind+](https://github.com/user-attachments/assets/646dcab9-4072-4f74-a407-9e3629b8a2e1)
 
-5. **Configure** the **PAL_config.yaml** WIFI credentials, IoT devices, etc.
+5. **Configure** and rename the PAL_config.yaml.template to **PAL_config.yaml** . Add WIFI credentials, IoT devices, etc.
 
 6. Run the python script **python /root/upload/PAL/PAL_v020.py** from the Mind+ terminal or from the UNIHIKER touch interface.
 
